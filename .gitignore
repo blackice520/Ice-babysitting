@@ -1,0 +1,46 @@
+# ---- 构建产物(可重建) ----
+build/
+dist/
+build_*/
+dist_*/
+*.spec.bak
+
+# ---- 安装包 ----
+# release/ 里放打包好的 exe / zip,体积大(约 126 MB),
+# 建议上传到 GitHub Releases,而不是提交进仓库。
+release/*.exe
+release/*.zip
+
+# 安装向导的可重建负载
+installer/payload.zip
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ---- 运行时数据(隐私,绝不提交) ----
+config.json
+logs/
+profile/
+crash.log
+debug.log
+
+# ---- WebView2 SDK 下载缓存 ----
+webview2_sdk.nupkg
+wv2_versions.json
+wv2sdk/
+
+# ---- 本地临时脚本 / 中间产物(不提交) ----
+.*.py
+.*.json
+
+# ---- IDE / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

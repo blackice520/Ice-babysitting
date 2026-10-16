@@ -1,0 +1,12 @@
+# 统一换行符,避免 Windows / Linux 协作出 diff 噪音
+* text=auto eol=lf
+
+# Windows 脚本必须保留 CRLF,否则某些版本的 cmd 解析会出错
+*.bat text eol=crlf
+
+# 二进制资源不做任何换行处理
+*.ico binary
+*.png binary
+*.jpg binary
+*.zip binary
+*.exe binary

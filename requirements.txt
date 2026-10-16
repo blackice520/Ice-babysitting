@@ -1,0 +1,5 @@
+# 运行依赖
+PyQt6>=6.7            # 窗口 / 控件 / 绘图
+qtwebview2>=0.5       # WebView2 封装(浏览器内核,自带 pythonnet 依赖)
+pythonnet>=3.0        # 调用 WebView2 的 .NET API(qtwebview2 依赖,显式列出)
+pywin32               # Win32 调用(全局热键钩子、窗口样式、穿透)
